@@ -1,3 +1,10 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --border-color: #e3e3e3;
+}
+
 * {
     box-sizing: inherit;
 }
