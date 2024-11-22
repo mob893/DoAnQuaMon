@@ -51,5 +51,5 @@ html {
 }
 
 .button:hover::before {
-    width: 134%;
+    width: 140%;
 }
