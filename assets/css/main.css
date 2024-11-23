@@ -57,7 +57,7 @@
 
 .header-navbar {
     z-index: 999;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -138,6 +138,10 @@
     width: 100%;
 }
 
+.navbar__menu {
+    display: none;
+}
+
 .header-content {
     position: absolute;
     top: 70px;
@@ -163,6 +167,7 @@
     transform: translateX(-250%);
     animation: showRight 1s ease forwards;
     animation-delay: 0.3s;
+    cursor: default;
 }
 
 .header-content__title:hover {
@@ -172,9 +177,8 @@
 .header-content__description {
     font-size: 1.4rem;
     font-weight: 600;
-    margin: 10px 350px;
+    margin: 10px 20% 40px;
     text-align: center;
-    margin-bottom: 40px;
     line-height: 1.6;
     letter-spacing: 1px;
     transform: translateX(200%);
