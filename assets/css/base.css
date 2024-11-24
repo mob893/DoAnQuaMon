@@ -6,7 +6,6 @@
     --primary-background-color: #dcebba;
     --primary-text-color: #587f37;
     --primary-border-color: #bed597;
-    /* #bed597 */
 }
 
 * {
@@ -28,8 +27,9 @@ html {
     padding: 10px 20px;
     position: relative;
     border-radius: 6px;
-    border: 2px solid var(--black-color);
+    border: 2px solid var(--white-color);
     background-color: transparent;
+    color: var(--white-color);
     transition: 1s ease;
     z-index: 1;
     overflow: hidden;
@@ -37,7 +37,7 @@ html {
 }
 
 .button:hover {
-    color: var(--white-color);
+    color: var(--black-color);
 }
 
 .button::before {
@@ -48,7 +48,7 @@ html {
     left: -30px;
     width: 0;
     height: 100%;
-    background-color: var(--black-color);
+    background-color: var(--white-color);
     transform: skewX(35deg);
     z-index: -1;
     transition: 1s ease;
@@ -56,4 +56,14 @@ html {
 
 .button:hover::before {
     width: 140%;
+}
+
+.button:active {
+    color: var(--white-color);
+    transition: 0.1s;
+}
+
+.button:active::before {
+    background-color: transparent;
+    transition: 0.1s;
 }

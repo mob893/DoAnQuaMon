@@ -1,3 +1,4 @@
+// Show boxes content 
 const boxes = document.querySelectorAll(".box-border")
 
 function checkBox() {

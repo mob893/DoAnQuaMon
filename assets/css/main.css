@@ -260,6 +260,7 @@
     border-radius: 12px;
     padding: 6px;
     transform: translateX(400%);
+    opacity: 0;
     transition: transform 0.8s ease-out;
     transition-delay: 0.3s;
 }
@@ -270,6 +271,7 @@
 
 .box-border.show {
     transform: translateX(0);
+    opacity: 1;
 }
 
 .box-content {
@@ -277,6 +279,33 @@
     padding: 30px;
     text-align: center;
     border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box__icon {
+    padding: 19px 21px;
+    background-color: #62763f;
+    border-radius: 5000px;
+    margin-bottom: 24px;
+    transform: scale(0);
+}
+
+.box-border.show .box__icon {
+    animation: showBoxIcon 1.4s ease-in forwards;
+}
+
+@keyframes showBoxIcon {
+    100% {
+        transform: scale(1);
+    }
+}
+
+.box__icon i {
+    font-size: 4.6rem;
+    color: var(--text-color);
 }
 
 .box__title {
@@ -314,10 +343,73 @@
 
 .box__description {
     margin: 0;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     line-height: 1.4;
     padding: 0 10%;
+    margin-bottom: 40px;
     color: var(--text-color);
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.button.box__button {
+    padding: 10px 60px;
+    color: var(--primary-text-color);
+    border-color: var(--primary-text-color);
+}
+
+.button.box__button:hover {
+    color: var(--text-color);
+}
+
+.button.box__button::before {
+    background-color: var(--primary-text-color);
+    width: 100%;
+    left: 0;
+    right: 0;
+    transform: scaleX(0);
+}
+
+.button.box__button:hover::before {
+    transform: scaleX(1);
+    width: 100%;
+}
+
+.box__decor {
+    width: 100%;
+    position: relative;
+}
+
+.box__decor::before {
+    content: "< < < <";
+    display: block;
+    transform: translate(170px, -30px);
+    width: 40%;
+    height: 10px;
+    color: var(--primary-text-color);
+    font-size: 2.6rem;
+    transition: 0.5s ease;
+}
+
+.box__decor::after {
+    content: "> > > >";
+    display: block;
+    transform: translate(493px, -39px);
+    width: 40%;
+    height: 10px;
+    color: var(--primary-text-color);
+    font-size: 2.6rem;
+    transition: 0.5s ease;
+}
+
+.button.box__button:hover ~ .box__decor::before {
+    transform: translate(150px, -30px);
+}
+
+.button.box__button:hover ~ .box__decor::after {
+    transform: translate(513px, -39px);
 }
 
 
