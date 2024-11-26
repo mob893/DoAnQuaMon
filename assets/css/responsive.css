@@ -29,6 +29,14 @@
     .navbar__menu-close-icon {
         display: none;
     }
+    
+    .box__decor::before {
+        width: 30%;
+    }
+
+    .box__decor::after {
+        width: 46%;
+    }
 }
 
 /* Mobile ( <= 739px ) */
