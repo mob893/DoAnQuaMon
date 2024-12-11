@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Environment Project</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -28,9 +28,9 @@
                 </a>
                 <div class="navbar-items">
                     <a href="#" class="navbar-items__link">Home</a>
-                    <a href="#" class="navbar-items__link">Blog</a>
-                    <a href="#" class="navbar-items__link">About</a>
-                    <a href="#" class="navbar-items__link">Contact</a>
+                    <a href="#foreword" class="navbar-items__link">Blog</a>
+                    <a href="#member" class="navbar-items__link">Members</a>
+                    <a href="#contact" class="navbar-items__link">Contact</a>
                 </div>
                 <div class="navbar__menu">
                     <i class="fa-solid fa-bars navbar__menu-icon"></i>
@@ -42,12 +42,31 @@
                 <p class="header-content__description"> Our main goal is for the betterment of the Earth, the others are
                     to spread our influence as much as possible as a helpful, educative site for everyone
                 </p>
-                <button href="" class="button header-content__button">Read more</button>
+                <a href="#definition" class="button header-content__button">Read more</a>
+            </div>
+            <div class="social-media">
+                <div class="social-media__icon">
+                    <a href="" class="social-media__link">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </div>
+                <div class="social-media__icon">
+                    <a href="" class="social-media__link">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+                <div class="social-media__icon">
+                    <a href="https://github.com/mob893/DoAnQuaMon.git" class="social-media__link">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
             </div>
         </header>
+
+        <!-- Body Content -->
         <div class="app-container">
             <!-- Foreword -->
-            <div class="content-container">
+            <div class="content-container" id="foreword">
                 <div class="content__title-box">
                     <div class="left-line"></div>
                     <h2 class="content__title">Foreword</h2>
@@ -67,7 +86,7 @@
                             with the vast amount of methanol was the two leading cause of one of this planet’s mass
                             extinction...
                         </p>
-                        <a href="page1.html" class="button box__button">More</a>
+                        <a href="reason.html" class="button box__button">More</a>
                         <div class="box__decor"></div>
                     </div>
                 </div>
@@ -90,7 +109,7 @@
             </div>
 
             <!-- Definitions -->
-            <div class="content-container">
+            <div class="content-container" id="definition">
                 <div class="content__title-box">
                     <div class="left-line"></div>
                     <h2 class="content__title">Definitions</h2>
@@ -129,11 +148,499 @@
                         </p>
                     </div>
                 </div>
+
+                <div class="time-line">
+                    <div class="time-line__container left" style="--delay:0.5s">
+                        <div class="time-line__content" style="--type-color:#0bb1b1">
+                            <img src="./assets/img/background/air.jpg" alt="" class="time-line__img">
+                            <h2 class="time-line__title">Air</h2>
+                            <p class="time-line__description">Chemicals are released into the air through harmful gases,
+                                burning of fuels, and other byproducts of modern human life.
+                            </p>
+                            <span class="time-line__left-arrow"></span>
+                        </div>
+                    </div>
+                    <div class="time-line__container right" style="--delay:1s">
+                        <div class="time-line__content" style="--type-color:#a74cc4">
+                            <img src="./assets/img/background/land.png" alt="" class="time-line__img">
+                            <h2 class="time-line__title">Land</h2>
+                            <p class="time-line__description">Waste materials are produced by humans left to accumulate
+                                on the Earth's surface. Many chemicals, such as pesticides and fertilizers, are absorbed
+                                into soil.
+                            </p>
+                            <span class="time-line__right-arrow"></span>
+                        </div>
+                    </div>
+                    <div class="time-line__container left" style="--delay:1.5s">
+                        <div class="time-line__content" style="--type-color:#6872fc">
+                            <img src="./assets/img/background/noise.jpg" alt="" class="time-line__img">
+                            <h2 class="time-line__title">Noise</h2>
+                            <p class="time-line__description">Humans produce excessive amounts of loud noise, including
+                                industrial and vehicle sources.
+                            </p>
+                            <span class="time-line__left-arrow"></span>
+                        </div>
+                    </div>
+                    <div class="time-line__container right" style="--delay:2s">
+                        <div class="time-line__content" style="--type-color:#d63d74">
+                            <img src="./assets/img/background/water.jpg" alt="" class="time-line__img">
+                            <h2 class="time-line__title">Water</h2>
+                            <p class="time-line__description">Toxins from human and industrial waste are introduced into
+                                our water supplies.
+                            </p>
+                            <span class="time-line__right-arrow"></span>
+                        </div>
+                    </div>
+                    <div class="time-line__container left" style="--delay:2.5s">
+                        <div class="time-line__content" style="--type-color:#0c8ec2">
+                            <img src="./assets/img/background/light.jpg" alt="" class="time-line__img">
+                            <h2 class="time-line__title">Light</h2>
+                            <p class="time-line__description">Humans produced excessive amounts of artificial light that
+                                interferes with natural cycles of light and darkness in the environment.
+                            </p>
+                            <span class="time-line__left-arrow"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Status -->
+            <div class="content-container">
+                <div class="content__title-box">
+                    <div class="left-line"></div>
+                    <h2 class="content__title">Status</h2>
+                    <div class="right-line"></div>
+                </div>
+
+                <!-- post 1 in Status -->
+                <div class="post-container">
+                    <img src="./assets/img/Status/water_status.jpg" alt="" class="post__img">
+                    <div class="post__body">
+                        <h3 class="post__heading">Water pollution</h3>
+                        <p class="post__description">The ocean is one of the most important ecosystems on the planet and
+                            a very diverse ecosystem with over 230000 creatures which is approximately 80% life on
+                            Earth. In addition, 70% of the oxygen that we breath comes from the ocean which is mainly
+                            made by seaweeds and Cyanobacterias. In this day and age. The ocean is facing suffocation
+                            due to plastic pollution, agricultural and industrial activities, oil spilling from ship
+                            transportation, mineral and oil exploitation, climate change, inefficient tourism and
+                            fishery...
+                        </p>
+                        <a href="water.html" class="button box__button">More</a>
+                        <div class="box__decor"></div>
+                        <img src="./assets/img/background/water.jpg" class="post__icon"></img>
+                    </div>
+                </div>
+
+                <!-- post 2 in Status -->
+                <div class="post-container">
+                    <img src="./assets/img/Status/soil_status.jpg" alt="" class="post__img">
+                    <div class="post__body">
+                        <h3 class="post__heading">Soil pollution</h3>
+                        <p class="post__description"> We, the human, mostly lives on land. Hence the pollution made on
+                            land will directly affect us. Soil pollution is caused by several reason such as: plastic
+                            pollution; mining activities; extensive farming; agrochemicals such as: pesticides,
+                            herbicides and fertilizers; construction activities; waste disposals such as: nuclear
+                            wastes, household wastes, industrial wastes, landfills, sewage, etc. In our opinion,
+                            agricultural and industrial activities...
+                        </p>
+                        <a href="soil.html" class="button box__button">More</a>
+                        <div class="box__decor"></div>
+                        <img src="./assets/img/background/land.png" class="post__icon"></img>
+                    </div>
+                </div>
+
+                <!-- post 3 in Status -->
+                <div class="post-container">
+                    <img src="./assets/img/Status/air_status.jpg" alt="" class="post__img">
+                    <div class="post__body">
+                        <h3 class="post__heading">Air pollution</h3>
+                        <p class="post__description">Air pollution is the contamination of air due to the presence of
+                            substances called pollutants in the atmosphere that are harmful to the health of humans and
+                            other living beings, or cause damage to the climate or to materials. There are many
+                            different types of air pollutants, such as gases (including ammonia, carbon monoxide, sulfur
+                            dioxide, nitrous oxides, methane and chlorofluorocarbons),...
+                        </p>
+                        <a href="air.html" class="button box__button">More</a>
+                        <div class="box__decor"></div>
+                        <img src="./assets/img/background/air.jpg" class="post__icon"></img>
+                    </div>
+                </div>
+
+                <!-- post 4 in Status -->
+                <div class="post-container">
+                    <img src="./assets/img/Status/light_status.jpg" alt="" class="post__img">
+                    <div class="post__body">
+                        <h3 class="post__heading">Light pollution</h3>
+                        <p class="post__description">Light pollution is a kind of pollution that is solely artificial
+                            due to the overwhelming amount of light created that make it turns detrimental to the
+                            environment and to human ourselves. Light polution comes from many sources however, in our
+                            opinion, the main cause is from urbanization as we consider light as an everyday
+                            necessity...
+                        </p>
+                        <a href="light.html" class="button box__button">More</a>
+                        <div class="box__decor"></div>
+                        <img src="./assets/img/background/light.jpg" class="post__icon"></img>
+                    </div>
+                </div>
+
+                <!-- post 5 in Status -->
+                <div class="post-container">
+                    <img src="./assets/img/Status/noise_status.jpg" alt="" class="post__img">
+                    <div class="post__body">
+                        <h3 class="post__heading">Noise pollution</h3>
+                        <p class="post__description">Air pollution is the contamination of air due to the presence of
+                            substances called pollutants in the atmosphere that are harmful to the health of humans and
+                            other living beings, or cause damage to the climate or to materials. There are many
+                            different types of air pollutants, such as gases (including ammonia, carbon monoxide, sulfur
+                            dioxide, nitrous oxides, methane and chlorofluorocarbons)...
+                        </p>
+                        <a href="noise.html" class="button box__button">More</a>
+                        <div class="box__decor"></div>
+                        <img src="./assets/img/background/noise.jpg" class="post__icon"></img>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Solution -->
+            <div class="content-container">
+                <div class="content__title-box">
+                    <div class="left-line"></div>
+                    <h2 class="content__title">Solution</h2>
+                    <div class="right-line"></div>
+                </div>
+
+                <div class="text__content">
+                    <h3 class="text__title" data-text="Education related solutions">Education related solutions</h3>
+                    <p class="text__description">Humans are the one that mostly responsible for this era’s environmental
+                        destruction. Hence, to save the environment and furthermore, protecting it, the best way is to
+                        raise awareness of the people about the devastating situation that we’re in. We split education
+                        into 3 categories base on their range of influence. The first and has the biggest impact is
+                        academic education – the education that we receive in schools – because the majority of the
+                        population go to school so this should be focus in the most. The second is propagation, this
+                        method is used to teach the one that couldn’t go to school and to remind the one that have
+                        already known about the environment. The third is guiding, just because this method is put in
+                        third place doesn’t mean it is not important, it is because this is the next step. After the
+                        people have learnt, understanded and willing to help, by then should we show them the way to
+                        save and protect the environment properly. Finally, with out any further words, here are some
+                        steps that could be done to educate the people:
+                    </p>
+                    <div class="time-line-text">
+                        <div class="time-line-text__container">
+                            <div class="time-line-text__text left">
+                                <p class="text__description left">+ Arrage free meetings and conventions for everyone. A
+                                    way to
+                                    encourage participation is to provide gifts such as posters, keychains, hats, etc,
+                                    and
+                                    create the best environment for the participants such as a cozy windy night in a
+                                    nice-looking high quality hall. This method has the merit of face to face
+                                    interaction so it
+                                    would be easier to desmonstrate ways to protect the environment, etc, and to answer
+                                    questions of the audiences
+                                </p>
+                            </div>
+                            <div class="time-line-text__img right">
+                                <img src="./assets/img/Solution/Convention.jpg" alt="" class="text__img right">
+                                <span class="text__img-source right">Source:
+                                    <a href="http://convention.rotary.org/">
+                                        http://convention.rotary.org/
+                                    </a>
+                                </span>
+
+                            </div>
+                        </div>
+
+                        <div class="time-line-text__container">
+                            <div class="time-line-text__img left">
+                                <img src="./assets/img/Solution/Cultural house.jpg" alt="" class="text__img left">
+                                <span class="text__img-source left">Source:
+                                    <a href="http://baoquangninh.vn/">
+                                        http://baoquangninh.vn/
+                                    </a>
+                                </span>
+                            </div>
+                            <div class="time-line-text__text right">
+                                <p class="text__description right">+ Use public services and government organizations
+                                    to propagate, such as: towns’ radio stations, cultural house, etc. In school
+                                    environment, there are organizations such as: Ho Chi Minh Communist Youth Union,
+                                    Vietnamese Students’ Association, etc.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="time-line-text__container">
+                            <div class="time-line-text__text left">
+                                <p class="text__description left">+ Speaking of schools, the influences of the teachers
+                                    play a vital role in the students’ way of thinking. Hence, the school can help
+                                    educate youngsters by many ways. For example: extra curricular activities about
+                                    climate change. The teachers could also mention the environment in their lectures.
+                                </p>
+                            </div>
+                            <div class="time-line-text__img right">
+                                <img src="./assets/img/Solution/School.jpg" alt="" class="text__img right">
+                                <span class="text__img-source right">Source:
+                                    <a href="http://thptnguyenvanhuyen.tuyenquang.edu.vn/">
+                                        http://thptnguyenvanhuyen.tuyenquang.edu.vn/
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="time-line-text__container">
+                            <div class="time-line-text__img left">
+                                <img src="./assets/img/Solution/Viet Nam Youth.png" alt="" class="text__img left">
+                            </div>
+                            <div class="time-line-text__text right">
+                                <p class="text__description right">+ Social media is the best way to spread
+                                    informations. We could set our focus on well known and well used social media
+                                    platforms such as: Zalo, Facebook. Also there are government apps that most people
+                                    have such as: VNeID or VssID. The students even have the app Thanh nien Viet Nam.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="text__title" data-text="Other solutions">Other solutions</h3>
+                    <p class="text__description">Of course, just education is not enough, we also need more practical
+                        solutions to help solve this problem. Here are some:
+                    </p>
+                    <div class="time-line-text">
+                        <div class="time-line-text__container">
+                            <div class="time-line-text__text left">
+                                <p class="text__description left">+ Organize volunteer activities to clean the
+                                    environment. In this way, not only your place of living is cleaner but also help
+                                    bonding the community, help people connect and make friends.
+                                </p>
+                            </div>
+                            <div class="time-line-text__img right">
+                                <img src="./assets/img/Solution/volunteer.webp" alt="" class="text__img right">
+                                <span class="text__img-source right">Source:
+                                    <a href="http://volunteerscleaningcommunities.com/">
+                                        http://volunteerscleaningcommunities.com/
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="time-line-text__container">
+                            <div class="time-line-text__img left">
+                                <img src="./assets/img/Solution/forest.webp" alt="" class="text__img left">
+                                <span class="text__img-source left">Source:
+                                    <a href="http://onetreeplanted.org/">
+                                        http://onetreeplanted.org/
+                                    </a>
+                                </span>
+                            </div>
+                            <div class="time-line-text__text right">
+                                <p class="text__description right">+ Plant more trees because trees play an important
+                                    role in the war against environmental destruction and the best solution to deal with
+                                    climate change. Protection forests condition air due to the leaves cover the sun’s
+                                    deadly UV rays; clean the air hence reducing contamination; prevent erosion hence
+                                    prevent deserfitication. Special forest preserve the ecosystem, especially
+                                    endangered species. Furthermore, trees also hold fresh water – the kind that we
+                                    normally drink; control the rainfall hence control the temperature.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="time-line-text__container">
+                            <div class="time-line-text__text left">
+                                <p class="text__description left">+ Use more public transports or means of
+                                    transportation that use clean energy like electric or just simply walk or bike more.
+                                    The air already had a lot of contamination, it doesn’t need more.
+                                </p>
+                            </div>
+                            <div class="time-line-text__img right">
+                                <img src="./assets/img/Solution/clean transportation.jpg" alt=""
+                                    class="text__img right">
+                                <span class="text__img-source right">Source:
+                                    <a href="http://environmentaldefence.ca/">
+                                        http://environmentaldefence.ca/
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="time-line-text__container">
+                            <div class="time-line-text__img left">
+                                <img src="./assets/img/Solution/reduce reuse recycle.jpg" alt="" class="text__img left">
+                                <span class="text__img-source right">Source:
+                                    <a href="http://pinterest.com/">
+                                        http://pinterest.com/
+                                    </a>
+                                </span>
+                            </div>
+                            <div class="time-line-text__text right">
+                                <p class="text__description right">+ “Reduce, reuse, recycle and refuse”. This is a well
+                                    known slogan. Reduce the amount of water, electricity and fuel used; reuse items,
+                                    recycle items, and refuse to buy unnecessary items
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="text__title" data-text="Solutions that have been done">Solutions that have been done</h3>
+                    <p class="text__description">In this section, we will focus on the government’s doing because they
+                        are our biggest chance to deal significant damage in this war against environmental destruction:
+                    </p>
+                    <p class="text__description">+ Reduce the population growth rate. As a common sense, too much
+                        people means needing more materials means damage the environment more. However, if the
+                        population reduce too much, the nation will also suffer due to the lack of man power. So,
+                        keeping it at the perfect rate is a tough but worth it job. In Viet Nam, there are the 2
+                        children policy which had and have been proving its effectiveness.
+                    </p>
+                    <img src="./assets/img/Solution/population rules.jpg" alt="" class="text__img mid">
+                    <span class="text__img-source mid">Source:
+                        <a href="http://pinterest.com/">
+                            http://pinterest.com/
+                        </a>
+                    </span>
+                    <p class="text__description">+ The government also has standards to limit factory emissions as low
+                        as possible so that climate change does not get worse. For example, for equipment that produces
+                        fertilizers and nitrogen compounds, the amount of ammonia gas must not exceed 20 mg.
+                    </p>
+                    <p class="text__description">+ Punishments for acts of environmental destruction are also something
+                        that the government pays special attention to and has reasonable measures. For example, acts of
+                        discharging waste that is harmful to the environment can be fined up to 3 billion VND or
+                        imprisoned up to 7 years; or a fine from 70,000,000 VND to 100,000,000 VND for illegal
+                        exploitation of from 15 m3 to less than 20 m3 of planted forest wood or from 07 m3 to less than
+                        10 m3 of natural forest wood, imprisonment from 06 months up to 03 years for illegal
+                        exploitation of from 10 m3 to less than 20 m3 of wood.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Member -->
+            <div class="content-container" id="member">
+                <div class="content__title-box">
+                    <div class="left-line"></div>
+                    <h2 class="content__title">Members</h2>
+                    <div class="right-line"></div>
+                </div>
+
+                <!-- Box 1 in Members -->
+                <div class="box-border member-box-border">
+                    <div class="box-content member-box">
+                        <div class="member left">
+                            <span class="member__info">Group leader: Nguyễn Thiện Nhân</span>
+                            <span class="member__info">Student ID: 24110114</span>
+                            <span class="member__info">Skill: giving ideas, planning</span>
+                            <span class="member__info">Pros: work hard</span>
+                            <span class="member__info">Cons: work too hard</span>
+                        </div>
+                        <div class="member__img">
+                            <img src="./assets/img/Member/Me.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Box 2 in Members -->
+                <div class="box-border member-box-border">
+                    <div class="box-content member-box">
+                        <div class="member__img">
+                            <img src="./assets/img/Member/Nhuan.jpg" alt="">
+                        </div>
+                        <div class="member right">
+                            <span class="member__info">Member_1: Nguyễn Phú Nhuận</span>
+                            <span class="member__info">Student ID: 24110116</span>
+                            <span class="member__info">Skill: giving ideas, planning</span>
+                            <span class="member__info">Pros: work hard</span>
+                            <span class="member__info">Cons: work too hard</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Box 3 in Members -->
+                <div class="box-border member-box-border">
+                    <div class="box-content member-box">
+                        <div class="member left">
+                            <span class="member__info">Member_2: Phạm Tuấn Anh</span>
+                            <span class="member__info">Student ID: 24110076</span>
+                            <span class="member__info">Skill: giving ideas, planning</span>
+                            <span class="member__info">Pros: work hard</span>
+                            <span class="member__info">Cons: work too hard</span>
+                        </div>
+                        <div class="member__img">
+                            <img src="./assets/img/Member/T.Anh.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Box 4 in Members -->
+                <div class="box-border member-box-border">
+                    <div class="box-content member-box">
+                        <div class="member__img">
+                            <img src="./assets/img/Member/Huy.jpg" alt="">
+                        </div>
+                        <div class="member right">
+                            <span class="member__info">Member_3: Nguyễn Quang Huy</span>
+                            <span class="member__info">Student ID: 24110095</span>
+                            <span class="member__info">Skill: giving ideas, planning</span>
+                            <span class="member__info">Pros: work hard</span>
+                            <span class="member__info">Cons: work too hard</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <footer class="footer" id="contact">
+            <div class="footer__container">
+                <h3 class="footer__title">About</h3>
+                <div class="footer__content">
+                    <!-- <img src="./assets/img/Logo/Logo.png" alt="" class="footer__img"> -->
+                    Group_4 of class 24110FIES is consist of four members, with this project, we hope to raise awareness
+                    about our environment's devastating situation so more and more will start helping to solve this
+                    persistent problem.
+                </div>
+            </div>
+            <div class="footer__container">
+                <h3 class="footer__title">Address</h3>
+                <div class="footer__content">
+                    <!-- <a href="" class="footer__link">Contribution</a>
+                    <a href="" class="footer__link">Progress</a>
+                    <a href="" class="footer__link">About website</a> -->
+                    <img src="./assets/img/School logo.png" alt="" class="footer__img">
+                    <p class="footer__school-name">Ho Chi Minh city’s University of Technology and Education (Vo Van
+                        Ngan
+                        facility)
+                    </p>
+                </div>
+            </div>
+            <div class="footer__container">
+                <h3 class="footer__title">Contact</h3>
+                <div class="footer__content">
+                    <div class="footer__contact">
+                        <div class="contact__icon">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <p class="contact__info">Email:
+                            <a href="mailto:24110114@student.hcm.edu.vn">
+                                24110114@student.hcm.edu.vn
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="footer__content">
+                    <div class="footer__contact">
+                        <div class="contact__icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <p class="contact__info">Phone number: 0786238476</p>
+                    </div>
+                </div>
+                <div class="footer__content">
+                    <div class="footer__contact">
+                        <div class="contact__icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <p class="contact__info">Address: Đại học Sư Phạm Kỹ Thuật</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
