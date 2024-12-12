@@ -794,6 +794,7 @@
     font-size: 1.4rem;
     color: var(--text-color);
     padding: 6px 0;
+    line-height: 1.4;
 }
 
 .member__img {
@@ -802,6 +803,7 @@
     background-color: var(--white-color);
     width: 200px;
     height: 200px;
+    min-width: 200px;
     border: 2px solid var(--primary-text-color);
     display: flex;
 }
